@@ -3,13 +3,13 @@ import { View, Text, StyleSheet} from 'react-native'
 
 const MealDetailsScreen = props => {
     return (
-        <View styles={style.screen}>
+        <View style={styles.screen}>
             <Text>The Meal Details Screen!</Text>
         </View>
     );
 }
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
     screen: {
         flex: 1,
         justifyContent: 'center',
