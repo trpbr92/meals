@@ -1,12 +1,13 @@
 import React from 'react';
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
+import { ScreenContainer } from 'react-native-screens';
 
 const CategoryGridTile = props => {
     return (
         <TouchableOpacity 
         style={styles.gridItems}
         onPress={()=>  {props.onSelect}}>
-<View>
+<View style={{ ...styles.container, ...{backgroundColor: props.color}}}>
     <Text>{props.title}</Text>
 </View>
 </TouchableOpacity>
@@ -18,6 +19,9 @@ const styles = StyleSheet.create({
         flex: 1,
         margin: 15,
         height: 150
+    },
+    container: {
+        flex: 1
     }
 })
 
